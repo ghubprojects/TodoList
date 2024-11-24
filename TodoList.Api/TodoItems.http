@@ -1,0 +1,79 @@
+@TodoItems_BaseURL = http://localhost:5151/api/TodoItems
+
+### Get all Todo items with filters
+GET {{TodoItems_BaseURL}}?searchText=&isCompleted=&sortColumn=title&sortOrder=desc&page=1&pageSize=10
+Content-Type: application/json
+
+###
+
+### Get a single Todo item by ID
+GET {{TodoItems_BaseURL}}/2
+Content-Type: application/json
+
+###
+
+### Add a new Todo item
+POST {{TodoItems_BaseURL}}
+Content-Type: application/json
+
+{
+  "title": "New Todo Item",
+  "description": "This is a new todo item.",
+  "dueDate": "2024-12-01T12:00:00",
+  "isCompleted": false
+}
+
+###
+
+### Update an existing Todo item
+PUT {{TodoItems_BaseURL}}/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Updated Todo Item",
+  "description": "This is an updated description.",
+  "dueDate": "2024-12-15T12:00:00",
+  "isCompleted": true
+}
+
+###
+
+### Update multiple Todo items
+PUT {{TodoItems_BaseURL}}
+Content-Type: application/json
+
+[
+  {
+    "id": 1,
+    "title": "Updated Todo Item 1",
+    "description": "Updated description for item 1.",
+    "dueDate": "2024-12-15T12:00:00",
+    "isCompleted": true
+  },
+  {
+    "id": 2,
+    "title": "Updated Todo Item 2",
+    "description": "Updated description for item 2.",
+    "dueDate": "2024-12-16T12:00:00",
+    "isCompleted": false
+  }
+]
+
+###
+
+### Delete a single Todo item by ID
+DELETE {{TodoItems_BaseURL}}/1
+Content-Type: application/json
+
+###
+
+### Delete multiple Todo items by IDs
+DELETE {{TodoItems_BaseURL}}
+Content-Type: application/json
+
+[
+  1,
+  2,
+  3
+]

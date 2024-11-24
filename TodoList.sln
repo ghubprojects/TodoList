@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Api", "TodoList.Api\TodoList.Api.csproj", "{5FB81A5A-9066-49BE-80A1-1D4D5ADEC559}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.Api", "TodoList.Api\TodoList.Api.csproj", "{5FB81A5A-9066-49BE-80A1-1D4D5ADEC559}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Business", "TodoList.Business\TodoList.Business.csproj", "{3A3EF5AF-1CC9-4439-A90E-CCAF5B9E5923}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.Business", "TodoList.Business\TodoList.Business.csproj", "{3A3EF5AF-1CC9-4439-A90E-CCAF5B9E5923}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.DataAccess", "TodoList.DataAccess\TodoList.DataAccess.csproj", "{3167BDF1-C915-4A5F-96FB-447D014BD663}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.DataAccess", "TodoList.DataAccess\TodoList.DataAccess.csproj", "{3167BDF1-C915-4A5F-96FB-447D014BD663}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Common", "TodoList.Common\TodoList.Common.csproj", "{1834C8BE-BED6-44B9-80EB-1B219C57AF85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.Common", "TodoList.Common\TodoList.Common.csproj", "{1834C8BE-BED6-44B9-80EB-1B219C57AF85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

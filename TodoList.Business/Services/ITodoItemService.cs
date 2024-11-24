@@ -8,5 +8,7 @@ public interface ITodoItemService {
     Task<TodoItemResponse> GetAsync(int id);
     Task AddAsync(AddTodoItemCommand command);
     Task UpdateAsync(UpdateTodoItemCommand command);
+    Task UpdateMultipleAsync(List<UpdateTodoItemCommand> dtos);
     Task DeleteAsync(int id);
+    Task DeleteMultipleAsync(List<int> ids);
 }

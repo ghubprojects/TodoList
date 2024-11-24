@@ -26,6 +26,8 @@ public partial class AppDbContext : DbContext {
             entity.Property(e => e.CreatedBy).HasMaxLength(255);
             entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
             entity.Property(e => e.UpdatedBy).HasMaxLength(255);
+
+            entity.HasQueryFilter(p => !p.IsDeleted);
         });
 
         OnModelCreatingPartial(modelBuilder);
